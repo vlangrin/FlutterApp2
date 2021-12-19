@@ -140,7 +140,7 @@ class _onboardingState extends State<onboarding> {
         Container(
           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
           child: Text(
-            "Lorem ipsum is simply dummy text of the printing and typesetting industry",
+            "",
             style: TextStyle(fontSize: 16, color: Colors.grey),
             textAlign: TextAlign.center,
           ),
