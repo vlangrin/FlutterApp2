@@ -73,7 +73,7 @@ class _newTaskState extends State<newTask> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
-                          "For",
+                          "",
                           style: TextStyle(fontSize: 18),
                         ),
                         Container(
@@ -83,7 +83,7 @@ class _newTaskState extends State<newTask> {
                                   BorderRadius.all(Radius.circular(20)),
                               color: Colors.grey.withOpacity(0.2)),
                           child: Text(
-                            "Asignee",
+                            "",
                             style: TextStyle(fontSize: 18),
                           ),
                         ),
@@ -91,7 +91,7 @@ class _newTaskState extends State<newTask> {
                           width: 10,
                         ),
                         Text(
-                          "In",
+                          "",
                           style: TextStyle(fontSize: 18),
                         ),
                         Container(
@@ -101,7 +101,7 @@ class _newTaskState extends State<newTask> {
                                   BorderRadius.all(Radius.circular(20)),
                               color: Colors.grey.withOpacity(0.2)),
                           child: Text(
-                            "Project",
+                            "",
                             style: TextStyle(fontSize: 18),
                           ),
                         ),
