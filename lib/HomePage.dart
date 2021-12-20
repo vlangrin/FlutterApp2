@@ -4,6 +4,8 @@ import 'package:newtotolist/NewTask.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:newtotolist/NewNote.dart';
+import 'package:newtotolist/Profile.dart';
+import 'Profile.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -341,6 +343,15 @@ class _homePageState extends State<homePage> {
                                   ),
                                 ),
                               ),
+                              InkWell(
+                                onTap: openProfile,
+                                child: Container(
+                                  child: Text(
+                                    "Открыть профиль",
+                                    style: TextStyle(fontSize: 18),
+                                  ),
+                                ),
+                              ),
                               SizedBox(
                                 height: 1,
                               )
@@ -450,5 +461,9 @@ class _homePageState extends State<homePage> {
   openNewCheckList() {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => CheckList()));
+  }
+
+  openProfile() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => ()));
   }
 }
