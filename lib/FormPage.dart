@@ -98,14 +98,6 @@ class _FormPageState extends State<FormPage> {
                       onTap: openHome,
                       child: RaisedButton(
                         color: Colors.redAccent,
-                        onPressed: () {
-                          if (_formkey.currentState.validate()) {
-                            RegistrationUser();
-                            print("Successful");
-                          } else {
-                            print("Unsuccessfull");
-                          }
-                        },
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50.0),
                             side: BorderSide(color: Colors.blue, width: 2)),

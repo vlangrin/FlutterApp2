@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'FormPage.dart';
+import 'LoginPage.dart';
 
 class Onboarding extends StatelessWidget {
   @override
@@ -156,6 +157,6 @@ class _onboardingState extends State<onboarding> {
 
   openLoginPage() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => FormPage()));
+        context, MaterialPageRoute(builder: (context) => LoginPage()));
   }
 }
