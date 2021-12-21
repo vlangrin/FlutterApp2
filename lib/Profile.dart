@@ -2,7 +2,23 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
 
-class ProfileUI2 extends StatelessWidget {
+class Profile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'avenir'),
+      home: Profile(),
+    );
+  }
+}
+
+class profile extends StatefulWidget {
+  @override
+  _profileState createState() => _profileState();
+}
+
+class _profileState extends State<profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

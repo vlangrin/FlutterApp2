@@ -5,7 +5,6 @@ import 'package:table_calendar/table_calendar.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:newtotolist/NewNote.dart';
 import 'package:newtotolist/Profile.dart';
-import 'Profile.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -343,6 +342,11 @@ class _homePageState extends State<homePage> {
                                   ),
                                 ),
                               ),
+                              Container(
+                                height: 1,
+                                margin: EdgeInsets.symmetric(horizontal: 30),
+                                color: Colors.black.withOpacity(0.2),
+                              ),
                               InkWell(
                                 onTap: openProfile,
                                 child: Container(
@@ -464,6 +468,6 @@ class _homePageState extends State<homePage> {
   }
 
   openProfile() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => ()));
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
   }
 }
